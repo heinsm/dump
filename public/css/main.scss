@@ -104,9 +104,28 @@ dd {
   width: 70%;
 }
 
-footer {
-  font-size: .8rem;
-  text-align: center;
+footer{
+  position:relative;
+  width:100%;
+  bottom:0;
+
+  height:49px;
+  border-top:1px solid #ddd;
+  font-size:12px;
+  text-transform:uppercase;
+  color:#bbb;
+}
+
+footer a {
+  color:#bbb
+}
+
+footer div.footer-table {
+  display:table;margin:auto;height:49px
+}
+
+footer div.footer-table div.footer-cell {
+  display:table-cell;vertical-align:middle
 }
 
 /*============================================================================*/
