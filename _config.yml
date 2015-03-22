@@ -1,6 +1,13 @@
 markdown: redcarpet
-highlighter: null
-permalink: /:title
+highlighter: pygments
+permalink: /post/:title
+relative_permalinks: true
+
+paginate: 5
+paginate_path: '/blog/:num'
+
+excerpt_separator: "\n\n\n"
+
 
 url:
 baseurl:
@@ -11,3 +18,16 @@ redcarpet:
 sass:
   sass_dir: public/css
   style: :compressed
+
+exclude: [README.md]
+
+# own settings
+name: heinsm
+domain: heinsm.github.io
+url: http://heinsm.github.io
+description: a blog
+copyright: 2014&mdash;2015
+author:
+    name: mike
+    github_link: https://github.com/heinsm
+    twitter_link: (none)
