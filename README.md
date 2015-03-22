@@ -1,4 +1,5 @@
 ## My Blog
 
-Currently using layout from Brume
-adjusting going forward
+Influences:
+* Layout from Brume
+* tag and categories from http://www.minddust.com/post/tags-and-categories-on-github-pages/
