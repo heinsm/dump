@@ -24,7 +24,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 # so be sure to set them if your theme uses them.
 #
 title : A blog
-tagline: A blog
+tagline: (cause it's fun)
 author :
   name : heinsm
   email : null
