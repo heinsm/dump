@@ -12,10 +12,10 @@ title : A blog
 tagline: A blog
 author :
   name : mike
-  email : mike
+  email : null
   github : heinsm
-  twitter : 
-  feedburner : 
+  twitter : null
+  feedburner : github/heinsm
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
