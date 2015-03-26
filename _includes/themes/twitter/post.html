@@ -27,7 +27,12 @@
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+    {% assign pub_date = page.date | date: "%B %-d %Y &nbsp&nbsp - &nbsp&nbsp %R" %}
+    {% if pub_date contains '00:00' %}
+    <div class="date"><span>{{ page.date | date: "%B %-d %Y" }}</span></div>
+    {% else %}
+    <div class="date"><span>{{ page.date | date: "%B %-d %Y &nbsp&nbsp - &nbsp&nbsp %R" }}</span></div>
+    {% endif %}
 
   {% unless page.tags == empty %}
     <h4>Tags</h4>
