@@ -167,3 +167,39 @@ else
     fi
 fi 
 ```
+
+---
+
+### Other side notes
+
+#### Titlebar support - putty window titles
+
+```text
+General
+    tmux.conf
+        -add:
+            set -g set-titles on
+            set -g set-titles-string "#T"
+        -add :XT to terminal overrides
+            set -g terminal-overrides "xterm*:XT:smcup@:rmcup@"
+
+Centos
+    /etc/bashrc
+        -in select case $TERM; add (*) to screen) --- such as "screen*"
+
+Ubuntu - precise
+    ~/.bashrc
+        -in in select case $TERM; add screen*) such as below
+            case "$TERM" in
+                xterm*|rxvt*|screen*)
+Debian
+    /etc/bash.bashrc
+        uncomment the lines and add screen* to the case
+            case "$TERM" in
+            screen*|xterm*|rxvt*)
+                PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+                ;;
+            *)
+                ;;
+            esac
+```
