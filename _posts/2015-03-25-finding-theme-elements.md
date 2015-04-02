@@ -2,7 +2,7 @@
 layout: post
 title: Finding theme elements
 categories: [programming]
-tags: [jekyll]
+tags: [jekyll, liquid]
 ---
 
 Ref:

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: liquid code block formatting
+title: Liquid code block formatting
 categories: [programming]
-tags: [jekyll]
+tags: [jekyll, liquid]
 ---
 
 

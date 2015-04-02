@@ -1,8 +1,8 @@
 ---
 layout: post
-title: cats and tags
+title: Cats and Togs
 categories: [programming, side-bar, sysadmin]
-tags: [remember-when,wtf, jekyll, wakeonlan]
+tags: [remember-when,wtf, jekyll, wakeonlan, liquid]
 comments: false
 analytics: false
 published: true

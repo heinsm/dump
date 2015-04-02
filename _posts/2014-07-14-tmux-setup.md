@@ -1,6 +1,6 @@
 ---
 layout: post
-title: tmux setup - my favorite terminal manager
+title: TMUX setup - my favorite terminal manager
 categories: [sysadmin]
 tags: [console]
 # date: timestamp
@@ -13,7 +13,7 @@ Ref:
 * http://forums.gentoo.org/viewtopic-t-836006-start-0.html
 
 
-# Tmux
+# TMUX
 
 A linux terminal / virtual console manager similar to Screen.  Screen has many good uses, but tmux is like screen on drugs.
 

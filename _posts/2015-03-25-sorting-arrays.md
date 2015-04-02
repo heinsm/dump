@@ -1,8 +1,8 @@
 ---
 layout: post
-title: sorting arrays
+title: Liquid - Sorting arrays
 categories: [programming]
-tags: [jekyll]
+tags: [jekyll, liquid]
 date: 2015/03/25 22:03
 ---
 Ref:

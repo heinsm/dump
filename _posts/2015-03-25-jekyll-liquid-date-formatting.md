@@ -1,8 +1,8 @@
 ---
 layout: post
-title: jekyll liquid date formatting
+title: Jekyll liquid date formatting
 categories: [programming]
-tags: [jekyll]
+tags: [jekyll, liquid]
 ---
 
 Ref:
