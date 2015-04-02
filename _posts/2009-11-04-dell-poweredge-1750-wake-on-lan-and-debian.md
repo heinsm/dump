@@ -6,8 +6,9 @@ tags: [wakeonlan]
 # date: timestamp
 
 ---
+Refs:
 
-# WHATABOUT
+* http://forums.debian.net/
 
 Details how to setup Wake-On-Lan (WOL) with a Dell PowerEdge 1750, Broadcom NetXtreme BCM5704 Gigabit ethernet, and debian (lenny); specifically, dealing with the issue of having the NIC card configured for WOL, but after issuing the standard 'shutdown -h now' command from within linux; the NIC card does not respond to WOL magic packets.
 
@@ -17,14 +18,14 @@ With the BCM5704 nics, the details of the configuration tools for linux, or dos 
 
 Pressing 'CTRL-S' brings us to a configuration panel which allows for enabling the Wake-On-LAN (WOL) mode of the card.
 
-# Problem
+## Problem
 
 The WOL performance was as expected in every situation except if we shutdown or suspended from within Linux.  The WOL magic packet woke up the machine from the S5 halt power state in these scenarios:
 
 * If workstation power was disabled half way through BIOS posting (but prior to linux booting)
 * When Windows was used to shutdown the machine
 
-# One Solution
+## One Solution
 
 It took awhile to determine the blame on power state traversal when linux was running its shutdown / halt script; but in the end the solution was to modify the behavior of linux when entering into a specific power state.  To do this, we used a few command line tools to investigate NIC WOL state (or what linux thought the WOL state was), NIC driver, and PCI bus enumerations.
 
@@ -76,7 +77,7 @@ If the 'g' is not present, check the line above - 'Supports Wake-on';  if 'g' is
 ethtool -s eth0 wol g
 ```
 
-## Modify PCI Power States
+### Modify PCI Power States
 
 Generally, most savy user are able to traverse the forums and reach this point; we have turned on WOL from the NIC config, and checked that the linux driver sees our NIC WOL settings.  At this point, one would thinking halting the machine and sending a magic packet would work just fine... but no. Apparently, the driver for the Broadcom doesn't properly handle our explicit desire for WOL.
 
@@ -161,7 +162,7 @@ acpitool -w
   5. PCI1         S5     disabled  no-bus:pci0000:01
 ```
 
-## Making this Automatic
+### Making this Automatic
 
 So if you've been following along doing all this - shutting down linux, and sending the magic WOL packet will now wake your workstation properly; however, the next startup/shutdown will not keep your hard work.  To make this config automatic, we need to do a few simple things: 
 

@@ -3,7 +3,7 @@ layout: post
 title: Sublime packages
 categories: [editor]
 tags: [sublime]
-# date: timestamp
+date: 2015-04-01 22:12:13
 
 ---
 Refs:
