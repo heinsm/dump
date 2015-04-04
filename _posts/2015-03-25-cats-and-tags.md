@@ -2,7 +2,7 @@
 layout: post
 title: Cats and Togs
 categories: [programming, side-bar, sysadmin, aquarium]
-tags: [remember-when,wtf, jekyll, wakeonlan, liquid, disease]
+tags: [cloud, linode, VPS, remember-when, wtf, jekyll, wakeonlan, liquid, disease]
 comments: false
 analytics: false
 published: false

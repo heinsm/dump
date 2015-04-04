@@ -3,7 +3,7 @@ layout: post
 title: Liquid - Sorting arrays
 categories: [programming]
 tags: [jekyll, liquid]
-date: 2015/03/25 22:03
+date: 2015/03/25 22:03-04:00
 ---
 Ref:
 
