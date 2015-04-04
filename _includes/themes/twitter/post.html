@@ -4,6 +4,14 @@
 
 <div class="row">
   <div class="span10">
+
+{% if page.disclaimer == true %}
+<div class="alert alert-error">
+{% capture mydisclaimer %}{% include /themes/twitter/disclaimer.md %}{% endcapture %}
+{{ mydisclaimer | markdownify }}
+</div>
+{% endif %}
+
     {{ content }}
     <hr>
     <div class="pagination">

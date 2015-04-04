@@ -4,7 +4,7 @@ title: Mounting Physical Disk storage in VirtualBox
 categories: [sysadmin]
 tags: [virtualbox]
 # date: timestamp
-
+disclaimer: true
 ---
 
 Ref:
@@ -12,16 +12,6 @@ Ref:
 * https://www.virtualbox.org/manual/ch09.html
 * https://forums.virtualbox.org/viewtopic.php?f=2&t=38124
 * https://forums.virtualbox.org/viewtopic.php?f=6&t=38914
-
----
-**Disclaimer Alert**
-
-```text
-Yes  - if you don't know what you're doing or have no backups of the system you are doing this to - then get one...
-
-Do realize these are instructions or details of my experience and that they are for a VM to interact directly with your physical disk.  Bad things can therefor happen and I assume no responsibility over the outcome.
-```
----
 
 I have a dual booting linux / windows lappy.  Sometimes I want a pure linux env better speed, etc.); sometimes I want Windows environment.  and sometimes I want both!.
 Wouldn't it be awesome to VM my dual booted linux into a windows hosted VM?  This article shows how to do exactly that.
