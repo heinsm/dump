@@ -3,15 +3,15 @@ layout: post
 title: TMUX setup - my favorite terminal manager
 categories: [sysadmin]
 tags: [console]
-# date: timestamp
-
+date: 2015-04-04 22:36:00-04:00
+original_date: 2014-07-14
 ---
 
 Ref:
 
 * http://en.wikipedia.org/wiki/Tmux
 * http://forums.gentoo.org/viewtopic-t-836006-start-0.html
-
+* http://stackoverflow.com/questions/8518815/how-to-send-commands-when-opening-a-tmux-session-inside-another-tmux-session
 
 # TMUX
 
@@ -72,7 +72,7 @@ Save this as file
 unbind C-b
 unbind l
 set -g prefix C-a
-bind-key C-a last-window
+bind-key C-a send-prefix
  
 # Reload key
 bind r source-file ~/.tmux.conf
