@@ -29,3 +29,13 @@ Host server1.nixcraft.com
 Host server2.nixcraft.com
   IdentityFile /backup/home/userName/.ssh/id_rsa
 ```
+
+To add other options see man pages under -o
+
+For persistent local tunnels we can do something like this for an entry for example:
+
+```text
+Host server2.nixcraft.com
+  IdentityFile /backup/home/userName/.ssh/id_rsa
+  LocalForward 31999 localhost.localdomain:31999
+```
