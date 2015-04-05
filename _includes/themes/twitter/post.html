@@ -34,14 +34,25 @@
   </div>
   
   <div class="span4">
+  {% if page.original_date != nil %}
     <h4>Published</h4>
+    {% assign pub_date = page.original_date | date: "%B %-d %Y &nbsp&nbsp - &nbsp&nbsp %R" %}
+    {% if pub_date contains '00:00' %}
+    <div class="date"><span>{{ page.original_date | date: "%B %-d %Y" }}</span></div>
+    {% else %}
+    <div class="date"><span>{{ page.original_date | date: "%B %-d %Y &nbsp&nbsp - &nbsp&nbsp %R" }}</span></div>
+    {% endif %}
+    <h4>Last Updated</h4>
+  {% else %}
+    <h4>Published</h4>
+  {% endif %}
     {% assign pub_date = page.date | date: "%B %-d %Y &nbsp&nbsp - &nbsp&nbsp %R" %}
     {% if pub_date contains '00:00' %}
     <div class="date"><span>{{ page.date | date: "%B %-d %Y" }}</span></div>
     {% else %}
     <div class="date"><span>{{ page.date | date: "%B %-d %Y &nbsp&nbsp - &nbsp&nbsp %R" }}</span></div>
     {% endif %}
-
+  
   {% unless page.tags == empty %}
     <h4>Tags</h4>
     <ul class="tag_box">
