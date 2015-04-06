@@ -112,7 +112,7 @@ bind-key ! command-prompt -p "swap pane with:"  "swap-pane -U -t '%%'"
 
 ## Installing as part of your login profile
 
-To have Tmux automatically open up new virtual console, and attach to your on-going vconsole set - this script can be added to your bashrc to make this simple.
+To have Tmux automatically open up new virtual console, and attach to your on-going vconsole set - this script can be added to your bashrc to make this simple.  Save this as /usr/local/bin/tmx; follow setup steps above
 
 ```bash
 #!/bin/bash
