@@ -3,6 +3,8 @@ layout: post
 title: Liquid code block formatting
 categories: [programming]
 tags: [jekyll, liquid]
+date: 2014-07-14
+updated: 2015-04-08 21:31:10-04:00
 ---
 
 
@@ -23,3 +25,9 @@ Example:
 
 {% capture text %}|.% assign sortedPosts = site.posts | sort_by:name %.|{% endcapture %}    
 {% include JB/liquid_raw %}
+
+## Another Way
+Yeah... the result can be difficult to accomplish.  I personally like ways that keep the text markdown very close to the rendered html.  You can accomplish the same affect by code fencing and putting a space between the \{.
+Note: In code fences, we don't need to escape the curly.
+
+Although - the spaces are annoying at least the are consitent; unlike the above JB magic.  and the spaces also throw off the pygment syntax highlighting.  its a fair compromise for cleaner text.

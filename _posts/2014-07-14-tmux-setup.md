@@ -3,8 +3,8 @@ layout: post
 title: TMUX setup - my favorite terminal manager
 categories: [sysadmin]
 tags: [console]
-date: 2015-04-04 22:36:00-04:00
-original_date: 2014-07-14
+date: 2014-07-14
+updated: 2015-04-04 22:36:00-04:00
 ---
 
 Ref:
