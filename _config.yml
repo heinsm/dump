@@ -5,7 +5,7 @@ timezone: America/Toronto
 markdown: redcarpet
 highlighter: pygments
 permalink: /:categories/:year/:month/:day/:title
-relative_permalinks: true
+relative_permalinks: false
 
 paginate: 5
 paginate_path: '/blog/:num'
